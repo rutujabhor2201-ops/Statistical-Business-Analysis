@@ -1,0 +1,139 @@
+HYPOTHESIS TEST RESULTS
+Statistical Business Analysis
+
+Significance Level (alpha): 0.05
+
+
+======================================================================
+1. ONE-SAMPLE T-TEST
+======================================================================
+
+Test:
+One-sample t-test
+
+Benchmark:
+97,955.500
+
+Test Statistic:
+t = 2.565
+
+p-value:
+0.012
+
+Alpha:
+0.050
+
+Decision:
+Reject H0
+
+Interpretation:
+Since the p-value (0.012) is less than the significance level (0.05),
+the null hypothesis is rejected. The result provides statistically
+significant evidence that the population mean of Total_Sales differs
+from the benchmark value of 97,955.500.
+
+Null Hypothesis (H0):
+The population mean of Total_Sales is equal to 97,955.500.
+
+Alternative Hypothesis (H1):
+The population mean of Total_Sales is different from 97,955.500.
+
+
+======================================================================
+2. INDEPENDENT-SAMPLES WELCH T-TEST
+======================================================================
+
+Test:
+Independent-samples Welch t-test
+
+Group 1:
+North
+
+Group 2:
+South
+
+Mean - North:
+142,272.679
+
+Mean - South:
+138,438.963
+
+t-statistic:
+t = 0.130
+
+p-value:
+0.897
+
+Alpha:
+0.050
+
+Decision:
+Fail to reject H0
+
+Interpretation:
+Since the p-value (0.897) is greater than the significance level
+(0.05), the null hypothesis is not rejected. The result does not
+provide sufficient statistical evidence of a difference between the
+mean Total_Sales of the North and South groups at the 5% significance
+level.
+
+Null Hypothesis (H0):
+The mean Total_Sales of the North and South groups are equal.
+
+Alternative Hypothesis (H1):
+The mean Total_Sales of the North and South groups are different.
+
+
+======================================================================
+3. ONE-WAY ANOVA
+======================================================================
+
+Test:
+One-way ANOVA
+
+Groups:
+East, North, South, West
+
+F-statistic:
+F = 2.164
+
+p-value:
+0.097
+
+Alpha:
+0.050
+
+Decision:
+Fail to reject H0
+
+Interpretation:
+Since the p-value (0.097) is greater than the significance level
+(0.05), the null hypothesis is not rejected. The result does not
+provide sufficient statistical evidence of a difference in mean
+Total_Sales across the four regions at the 5% significance level.
+
+Null Hypothesis (H0):
+The mean Total_Sales is equal across the four regions.
+
+Alternative Hypothesis (H1):
+At least one regional mean Total_Sales differs from the others.
+
+
+======================================================================
+SUMMARY
+======================================================================
+
+1. One-sample t-test:
+   p = 0.012 < 0.05 -> Reject H0
+
+2. Welch t-test (North vs South):
+   p = 0.897 > 0.05 -> Fail to reject H0
+
+3. One-way ANOVA (East, North, South, West):
+   p = 0.097 > 0.05 -> Fail to reject H0
+
+
+Note:
+"Fail to reject H0" means that the test did not provide sufficient
+evidence against the null hypothesis at the 5% significance level.
+It does not prove that the null hypothesis is true.
